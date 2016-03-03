@@ -14,6 +14,7 @@ namespace GameOfLife
             int[,] arr = new int[20, 20];
 
 
+
             //Add some random values to the array 
             //Random R = new Random();
             //for (int i = 0; i < 50; i++)
