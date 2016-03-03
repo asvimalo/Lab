@@ -33,11 +33,11 @@ namespace GameOfLife
             lastGeneration = new int[generation.GetLength(0), generation.GetLength(1)];
 
             Console.Clear();
-            Console.WriteLine("\t\t--+-------------------------------------------------------------------------------+-");
-            Console.WriteLine("\t\t--+-------------------------------Game of Life------------------------------------+-");
-            Console.WriteLine("\t\t--+-------------------------------------------------------------------------------+-");
+            Console.WriteLine("\t\t  +-------------------------------------------------------------------------------+");
+            Console.WriteLine("\t\t  |                               Game of Life                                    |");
+            Console.WriteLine("\t\t  +-------------------------------------------------------------------------------+");
             Console.WriteLine("\t\t  ¦ 0 ¦ 1 ¦ 2 ¦ 3 ¦ 4 ¦ 5 ¦ 6 ¦ 7 ¦ 8 ¦ 9 ¦ 10¦ 11¦ 12¦ 13¦ 14¦ 15¦ 16¦ 17¦ 18¦ 19¦");
-            Console.WriteLine("\t\t--+-------------------------------------------------------------------------------+-");
+            Console.WriteLine("\t\t  +-------------------------------------------------------------------------------+");
             for (Row = 0; Row <= 19; Row++)
             {
 
@@ -53,7 +53,7 @@ namespace GameOfLife
                     if (Board[Row, Column] == 1)
                     {
 
-                        Console.Write($" O  ");
+                        Console.Write($" 1L ");
                     }
                     else if (Board[Row, Column] == 0)//check if it works with only "else"
                     {
