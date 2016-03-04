@@ -1,0 +1,6 @@
+D:\EC-Utbildning\C#\VS\JuegoLaVida\JuegoLaVida\bin\Debug\JuegoLaVida.exe.config
+D:\EC-Utbildning\C#\VS\JuegoLaVida\JuegoLaVida\bin\Debug\JuegoLaVida.exe
+D:\EC-Utbildning\C#\VS\JuegoLaVida\JuegoLaVida\bin\Debug\JuegoLaVida.pdb
+D:\EC-Utbildning\C#\VS\JuegoLaVida\JuegoLaVida\obj\Debug\JuegoLaVida.csprojResolveAssemblyReference.cache
+D:\EC-Utbildning\C#\VS\JuegoLaVida\JuegoLaVida\obj\Debug\JuegoLaVida.exe
+D:\EC-Utbildning\C#\VS\JuegoLaVida\JuegoLaVida\obj\Debug\JuegoLaVida.pdb
