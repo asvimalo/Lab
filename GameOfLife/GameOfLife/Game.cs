@@ -32,6 +32,8 @@ namespace GameOfLife
             generation = (int[,])Board.Clone();
             lastGeneration = new int[generation.GetLength(0), generation.GetLength(1)];
 
+            Console.ForegroundColor = ConsoleColor.Green;
+
             Console.Clear();
             Console.WriteLine("\t\t  +-------------------------------------------------------------------------------+");
             Console.WriteLine("\t\t  |                               Game of Life                                    |");
@@ -52,7 +54,7 @@ namespace GameOfLife
                     //Console.Write(Board[Row, Column]);
                     if (Board[Row, Column] == 1)
                     {
-
+                        Console.ForegroundColor = ConsoleColor.Red;
                         Console.Write($" 1L ");
                     }
                     else if (Board[Row, Column] == 0)//check if it works with only "else"
@@ -60,15 +62,13 @@ namespace GameOfLife
                         Console.Write("    ");
                     }
 
-
-
                 }
 
                 Console.WriteLine();
             }
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("\t\t--+-------------------------------------------------------------------------------+-");
             Console.WriteLine($"\t\tGeneration: {GenerationCount}");
-
 
             Console.WriteLine("\n");
         }
@@ -93,13 +93,8 @@ namespace GameOfLife
             // Check for x + 1, y + 1
             if (x < generation.GetLength(1) - 1 && y < generation.GetLength(0) - 1) { if (generation[y + 1, x + 1] == 1) { count++; } }
             return count;
-
-
-
-            
-
-
         }
+
         public int[,] RandomBinary()
         {
             Random r = new Random();
@@ -117,6 +112,7 @@ namespace GameOfLife
             }
             return grid;
         }
+
         public void PrintNeighbours()
         {
             for (int x = 0; x < generation.GetLength(0); x++)
@@ -155,11 +151,8 @@ namespace GameOfLife
             }
             return generation = (int[,])nextGeneration.Clone();
 
-            
-
         }
 
     }
-
 
 }
